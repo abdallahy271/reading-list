@@ -1,0 +1,429 @@
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:100&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300&display=swap');
+
+
+.columncountGRL {
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    margin-top: 4em;
+    justify-content: center;
+}
+
+.linkToGoodreads {
+    color: white;
+}
+
+.linkToGoodreads:hover {
+    color: rgb(135, 247, 8);
+}
+
+.linkToGoodreads:visited {
+    color: rgb(0, 0, 0);
+}
+
+.textnextToImgGet {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+
+    color: white;
+    padding-top: 0em;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    transition: 0.6s;
+}
+
+.textnextToImgGet:hover {
+    opacity: 1;
+    transition: 0.6s;
+}
+
+.textnextToImgGetUP {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+
+    color: white;
+    padding-top: 0em;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 13px;
+    transition: 0.6s;
+}
+
+.textnextToImgGetUP:hover {
+    opacity: 1;
+    transition: 0.6s;
+}
+
+.flix {
+    position: absolute;
+    display: flex;
+    z-index: 20;
+    top: 20;
+}
+
+
+.textOnImage {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    position: absolute;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    z-index: 10;
+    top: -2px;
+    left: -2px;
+    line-height: 1.5;
+    width: 90%;
+    height: 86%;
+    font-size: 1.2em;
+    color: white;
+    padding-top: 3em;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    transition: 1.6s;
+    opacity: 0;
+}
+
+.bookstodisplayDivG {
+    display: flex;
+    width: auto;
+    page-break-inside: avoid;
+}
+
+.CovrImageGet {
+    position: relative;
+    height: 550px;
+    width: 350px;
+    padding: 1px;
+    transition: 0.9s;
+    object-fit: cover;
+}
+
+.CovrImageGetUP {
+    position: relative;
+    height: 420px;
+    width: 260px;
+    padding: 1px;
+    transition: 0.9s;
+    object-fit: cover;
+}
+
+.textOnImage:hover {
+    opacity: 1;
+}
+
+.textnextToImgGetUP:hover .CovrImageGetUP {
+    opacity: 1;
+
+    filter: grayscale(80%)blur(10px)contrast(50%);
+    transition: 0.9s;
+}
+
+.textnextToImgGet:hover .CovrImageGet {
+    opacity: 1;
+
+    filter: grayscale(80%)blur(10px)contrast(50%);
+    transition: 0.9s;
+}
+
+.prettyButtonGETUP {
+    position: relative;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    height: 3.5em;
+    width: 8.5em;
+    font-size: 1.2em;
+    transform: scale(1);
+    transition-duration: 0.5s;
+}
+
+.prettyButtonGETUPMore {
+    position: absolute;
+    right: 20px;
+    bottom: 45px;
+    text-shadow:
+
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    height: 0.5em;
+    width: 8.5em;
+    font-size: 2.2em;
+    transform: scale(1);
+    transition-duration: 0.5s;
+}
+.prettyButtonGETUPMore:hover {
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+}
+
+.prettyButtonGETUPMore:active {
+    transform: scale(1);
+    transition-duration: 0.5s;
+}
+
+.prettyButtonGETUPLess {
+    position: absolute;
+    left: 20px;
+    bottom: 45px;
+    text-shadow:
+
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    height: 0.5em;
+    width: 8.5em;
+    font-size: 2.2em;
+    transform: scale(1);
+    transition-duration: 0.5s;
+}
+.prettyButtonGETUPLess:hover {
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+}
+
+.prettyButtonGETUPLess:active {
+    transform: scale(1);
+    transition-duration: 0.5s;
+}
+.prettyButtonGETUP:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+.suggestionsToTitle{
+    position: absolute;
+    top:2px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+}
+
+.prettyButtonGETUP:active {
+    transform: scale(1);
+    transition-duration: 0.5s;
+}
+
+.prettyButtonGET {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    color: red;
+    border: 1px solid red;
+    border-radius: 50%;
+    line-height: 50px;
+    width: 50px;
+    font-family: 'lato', sans-serif;
+    font-weight: 300;
+    font-size: 50px;
+    display: table-cell;
+    vertical-align: text-top;
+    transform: scale(1);
+    transition-duration: 0.5s;
+}
+
+.prettyButtonGET:hover {
+    transform: scale(1.2);
+}
+
+.prettyButtonGET:active {
+    transform: scale(1.1);
+}
+
+.bookAdded2 {
+    display: block;
+    position: fixed;
+    top: 10px;
+    left: 60px;
+    transform: translate(-35px);
+    animation: mymove 2s;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    transition-duration: 0.8s;
+    opacity: 1;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    background-color: rgba(14, 14, 14, 0.6);
+    z-index: 50;
+}
+
+.bookDeleted2 {
+    display: block;
+    position: fixed;
+    top: 10px;
+    left: 60px;
+    transform: translate(-35px);
+    animation: mymove 2s;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    transition-duration: 0.8s;
+    opacity: 1;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    background-color: rgba(14, 14, 14, 0.6);
+    z-index: 50;
+}
+
+@keyframes mymove {
+    from {
+        transform: translate(0px);
+    }
+
+    to {
+        transform: translate(-35px);
+    }
+}
+
+.visibleDIVBOOK {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: fixed;
+    top: 10px;
+    left: 60px;
+    right: 60px;
+    align-content: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    transition-duration: 0.8s;
+    opacity: 1;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 50;
+}
+
+.ButtonToreturnYuBackToyourList {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    color: red;
+    border: 1px solid red;
+    border-radius: 50%;
+    line-height: 50px;
+    width: 50px;
+    font-family: 'lato', sans-serif;
+    font-weight: 300;
+    font-size: 50px;
+    display: table-cell;
+    vertical-align: text-top;
+    transform: scale(1);
+    transition-duration: 0.5s;
+    z-index: 30;
+}
+
+.ButtonToreturnYuBackToyourList:hover {
+    transform: scale(1.2);
+}
+
+.ButtonToreturnYuBackToyourList:active {
+    transform: scale(1.1);
+}
+
+.invisible {
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+    transition-duration: 0.8s;
+    visibility: hidden;
+}
+
+.LinkToOpenLibrary {
+    color: white;
+}
+
+.LinkToOpenLibrary:hover {
+    color: rgb(135, 247, 8);
+}
+
+.LinkToOpenLibrary:visited {
+    color: rgb(0, 0, 0);
+}
+
+.Getsuggup {
+
+    text-shadow: none;
+    font-weight: normal;
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: white;
+    transition: 0.9s;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.Getsuggup:hover {
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+    transition: 0.9s;
+}
+
+.Getsugg {
+
+    text-shadow: none;
+    font-weight: normal;
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: white;
+    padding-top: 1em;
+    transition: 0.9s;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+
+}
+
+.Getsugg:hover {
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+    transition: 0.9s;
+}

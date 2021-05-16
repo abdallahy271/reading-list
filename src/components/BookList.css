@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo:100&display=swap');
+
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+html {
+    overflow-y: scroll; 
+  }
+body {
+    background-color: rgb(34, 34, 34);
+    color: white;
+    overflow-x: hidden;
+}
+
+.Header {
+    height: 10px;
+    width: 100vw;
+}
+.nav{
+    position: absolute;
+    width:100vw;
+    right:5em;
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    text-align:right;
+    font-size:2em;
+    color:white;
+    z-index: 4;
+}
+.nav li{
+    display:inline;
+    padding-right: 25px !important;
+    padding-left: 25px !important;
+}
+.navbar1{
+    opacity:0;
+    visibility: hidden;
+    transition-duration: 1.5s ;
+    user-select: none;
+}
+.navbar{
+    opacity:1;
+    transition-duration: 1.5s ;
+}
+.nav a{
+    
+    display:inline-block;
+    padding:1px;
+    padding-right:10px;
+    padding-left:10px;
+    color:white;
+    font-family: 'Heebo', sans-serif;
+    text-decoration: none;
+}
+li a:hover {
+    
+    border-bottom: 1px solid white;
+  }
+  .nav-container{
+      width:100vw;
+ margin-top:1em;
+ z-index:4;
+  }
+  
+  .hamburgerMenu{
+      position: absolute;
+      right:20px;
+      top:0px;
+      font-size:3.8em;
+    background-color:rgba(10,10,10,0);
+    color:white;
+    border:none;
+    transform: scale(1);
+    transition-duration: 1s;
+    z-index:4;
+    cursor: pointer;
+    }
+    .hamburgerMenu:active{
+        position: absolute;
+        right:20px;
+        top:0px;
+        font-size:3.8em;
+    background-color:rgba(10,10,10,0);
+    color:white;
+    border:none;
+transform: scale(0.6);
+transition-duration: 0.5s;
+      }

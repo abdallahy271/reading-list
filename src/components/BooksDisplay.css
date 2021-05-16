@@ -1,0 +1,113 @@
+.bookAdded{
+    
+    position: fixed;
+    top:10px;
+    left:50px;
+    padding:10px;
+    transform:translate(-25px);
+    color:rgb(255, 255, 255);
+    font-family: 'lato', sans-serif;
+    border-radius: 10px;
+    transition-duration: 0.8s;
+    opacity:1;
+    background-color:rgba(0, 0, 0, 0.8);
+
+}
+
+.bookstodisplayDiv {
+    display: flex;
+    width: 90vw;
+    margin-left: 8px;
+    page-break-inside: avoid;
+}
+
+.CovrImage {
+    float: left;
+    width: 200px;
+    height: 300px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+
+}
+
+.textnextToImg {
+    padding-top: 0em;
+    line-height: 400%;
+    margin: -0.5em;
+}
+
+h2 {
+    display: inline;
+    font-family: 'Heebo', sans-serif;
+}
+
+h3 {
+    display: inline;
+    font-family: 'Heebo', sans-serif;
+}
+
+.invisible{
+   
+    width:0px;
+    opacity:0;
+    display :none;
+    visibility: hidden;
+}
+
+.link {
+    color: #fff;
+}
+
+.prettyButton {
+
+    width: 130px;
+    height: 40px;
+    color: #fff !important;
+    border-radius: 5px;
+    padding: 0px 5px;
+    font-family: var(--title); 
+    font-size: calc(var(--base-size) * 1.5); 
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+     border: none;
+     color: #000;
+  }
+  
+  /* 16 */
+  
+  .prettyButton :after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    z-index: -1;
+    box-shadow:
+     -7px -7px 20px 0px #fff9,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 20px 0px #0002,
+     4px 4px 5px 0px #0001;
+    transition: all 0.3s ease;
+  }
+  .prettyButton :hover {
+    color: #000;
+  }
+  .prettyButton :hover:after {
+    left: auto;
+    right: 0;
+    width: 100%;
+  }
+  .prettyButton :active {
+    top: 2px;
+  }

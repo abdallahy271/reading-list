@@ -83,6 +83,6 @@ readRoutes.route('/delete-read/:id').delete((req, res, next) => {
 app.use('/reads', readRoutes);
 
 
-app.listen(PORT, function() {
-    console.log("Server is running on Port: " + PORT);
+app.listen(process.env.PORT||PORT, function() {
+    console.log("Server is running on Port: " + process.env.PORT);
 });
