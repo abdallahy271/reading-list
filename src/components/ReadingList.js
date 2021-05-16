@@ -4,7 +4,7 @@ import axios from 'axios'
 import './ReadingList.css';
 
 let openlibrary = 'https://openlibrary.org'
-let coverImage = 'http://covers.openlibrary.org/b/id/'
+let coverImage = 'https://covers.openlibrary.org/b/id/'
 
 class ReadingList extends Component{
     constructor(props) {
@@ -141,7 +141,7 @@ class ReadingList extends Component{
             find = subject => {
               
          setTimeout(() => {
-          let url ='http://openlibrary.org/subjects/'+this.state.suggestions.toLowerCase()+'.json?offset='+this.state.offset
+          let url ='https://openlibrary.org/subjects/'+this.state.suggestions.toLowerCase()+'.json?offset='+this.state.offset
           axios.get(url)
                   .then(response => {
                       this.setState({ Getsuggestions: response.data,

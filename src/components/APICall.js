@@ -4,7 +4,7 @@ import './APICall.css';
 import uniqueId from 'react-html-id';
 
 let Togoodreads = 'https://www.goodreads.com/book/show/'
-let coverImage = 'http://covers.openlibrary.org/b/id/'
+let coverImage = 'https://covers.openlibrary.org/b/id/'
 
 class APICall extends Component {
     constructor(props) {
@@ -52,7 +52,7 @@ class APICall extends Component {
     })}
     find = searchTerm => {
         let authorB00k= this.state.search ? 'title' : 'author'
-        const url = `http://openlibrary.org/search.json?${authorB00k}=${searchTerm}`
+        const url = `https://openlibrary.org/search.json?${authorB00k}=${searchTerm}`
      
      fetch(url )
     .then(result => result.json())
